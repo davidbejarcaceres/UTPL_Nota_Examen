@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tableRow2"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/titulo_acerca_de"
+            android:layout_margin="10dp"
+            android:text="@string/acerca_de"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+    </TableRow>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Versión: 2.1"
+        android:id="@+id/texto_version"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/texto_autor"
+        android:layout_alignParentStart="true"
+        android:textColor="#212121"
+        android:layout_marginBottom="5dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="mail: davidbejar2009@gmail.com"
+        android:autoLink="email"
+        android:id="@+id/texto_url"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/texto_version"
+        android:layout_alignParentStart="true"
+        android:textColor="#212121"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/creado_por"
+        android:id="@+id/texto_autor"
+        android:layout_below="@+id/tableRow2"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentStart="true"
+        android:textColor="#212121"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="URL:  https://plus.google.com/+DavidB%C3%A9jarCaceres/about"
+        android:autoLink="web"
+        android:id="@+id/textView6"
+        android:layout_marginLeft="20dp"
+        android:textColor="#212121"
+        android:layout_below="@+id/texto_url"
+        android:layout_alignParentStart="true"
+        android:linksClickable="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="76dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/utpl_azul"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website_google"
+        android:autoLink="web"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

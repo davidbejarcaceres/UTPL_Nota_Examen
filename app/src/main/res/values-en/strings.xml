@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UTPL Test Score</string>
+    <string name="acerca_de">About...</string>
+    <string name="calculate">Calculate</string>
+    <string name="correct">Corrects</string>
+    <string name="errors">Errors</string>
+    <string name="questions">Questions</string>
+    <string name="creado_por">Created By:  David Béjar Cáceres</string>
+    <string name="website_google">www.utpl.edu.ec</string>
+    <string name="website_utpl">www.utpl.edu.ec</string>
+    <string name="action_settings">Settings</string>
+    <string name="instrucciones">Instructions</string>
+    <string name="formula">Score = Corrects -  (Errors / (n-1))</string>
+    <string name="titulo_formula">Equation</string>
+    <string name="explicacion">Questions = total amount of quiestions\n\ncorrects = amount of good answers \n\nerrors = amount of bad answers \n\nn = amount of options per question</string>
+</resources>

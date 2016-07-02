@@ -1,0 +1,16 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">UTPL Nota Examen</string>
+    <string name="acerca_de">Acerca de...</string>
+    <string name="creado_por">Creado por:   David Béjar Cáceres</string>
+    <string name="questions">Preguntas</string>
+    <string name="correct">Aciertos</string>
+    <string name="errors">Errores</string>
+    <string name="calculate">Calcular</string>
+    <string name="website_utpl">www.utpl.edu.ec</string>
+    <string name="website_google">www.utpl.edu.ec</string>
+    <string name="instrucciones">Instrucciones</string>
+    <string name="titulo_formula">Formula</string>
+    <string name="formula">Nota = Aciertos - ( Errores / (n-1))</string>
+    <string name="explicacion">Preguntas = cantidad total de preguntas\n\naciertos = cantidad de respuestas correctas \n\nerrores = cantidad respuestas incorrectas \n\nn = cantidad de literales por pregunta</string>
+</resources>
