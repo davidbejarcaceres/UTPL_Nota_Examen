@@ -2,24 +2,32 @@ package com.davidbejar.utplnotaexamen;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextSwitcher;
 import android.widget.TextView;
+import android.widget.ViewSwitcher;
 
 public class MainActivity extends AppCompatActivity {
 
     //Inicialización de variables
+
+
     int aciertos = 0;
     int preguntas = 40;
     int errores = 10;
@@ -47,6 +55,25 @@ public class MainActivity extends AppCompatActivity {
         final EditText TextBox2 = (EditText) findViewById(R.id.editText2);
         final EditText TextBox3 = (EditText) findViewById(R.id.editText3);
         final TextView TextView5 = (TextView) findViewById(R.id.textView5);
+
+
+
+        /*
+         * Set the in and out animations. Using the fade_in/out animations
+         * provided by the framework.
+         */
+        final Animation in = AnimationUtils.loadAnimation(this,
+                android.R.anim.fade_in);
+        final Animation out = AnimationUtils.loadAnimation(this,
+                android.R.anim.fade_out);
+
+        // END_INCLUDE(setup)
+
+
+
+
+
+
 
         acerca_de = (TextView) findViewById(R.id.texto_autor);
         utplImagen = (ImageButton) findViewById(R.id.imageView);
@@ -84,15 +111,12 @@ public class MainActivity extends AppCompatActivity {
                 if (calificacion < 8){
                     TextView5.setTextColor(getResources().getColor(R.color.rojo));
                     TextView5.setText(String.valueOf(calificacion) + "\nsupletorio");
+                    TextView5.startAnimation(in);
                 } else{
                     TextView5.setText(String.valueOf(calificacion)+"");
                     TextView5.setTextColor(getResources().getColor(R.color.negro));
-
-
+                    TextView5.startAnimation(in);
                 }
-
-
-
             }
         });
     };
@@ -194,5 +218,8 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
 
